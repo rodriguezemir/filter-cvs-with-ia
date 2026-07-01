@@ -14,6 +14,9 @@ importers:
       astro:
         specifier: ^7.0.4
         version: 7.0.4(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.1)(jiti@2.7.0)
+      tailwind-animations:
+        specifier: ^1.0.1
+        version: 1.0.1(tailwindcss@4.3.2)
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.2
@@ -1342,6 +1345,11 @@ packages:
     resolution: {integrity: sha512-XDpWUOPC6FEibaLzjfe0ucaV0YrOjYotGJO1WpF0Zd+n6ZGEQUsSugaoLq9QkEZtAfQIxT42UChcssDVPP3+/w==}
     engines: {node: '>=16'}
     hasBin: true
+
+  tailwind-animations@1.0.1:
+    resolution: {integrity: sha512-5ouCdgfGS4kcyuzRSb/1O3o9f5Akssi7ue46PHfKjvPLMWjtnzmqM8i6ElES3tKVTyhjSaTPfLti7aB7WSxhZg==}
+    peerDependencies:
+      tailwindcss: ^4.0.0
 
   tailwindcss@4.3.2:
     resolution: {integrity: sha512-WtctNNSH8A9jlMIqxzuYumOHU5uGZyRv0Q5svQl+oEPy5w84YpBxdb7MdqyiSPQge5jTJ6zFQLq0PFygdccSBA==}
@@ -2812,6 +2820,10 @@ snapshots:
       csso: 5.0.5
       picocolors: 1.1.1
       sax: 1.6.0
+
+  tailwind-animations@1.0.1(tailwindcss@4.3.2):
+    dependencies:
+      tailwindcss: 4.3.2
 
   tailwindcss@4.3.2: {}
 
